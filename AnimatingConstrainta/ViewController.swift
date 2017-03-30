@@ -23,8 +23,8 @@ class ViewController: UIViewController {
         
         UIView.animate(withDuration: 3, animations: {
             
-            self.leftConstraint.constant = self.doorOpen ? -16 : -self.leftDoor.frame.size.width
-            self.rightConstraint.constant = self.doorOpen ? -16 : -self.rightDoor.frame.size.width
+            self.leftConstraint.constant = self.doorOpen ? 0 : -self.leftDoor.frame.size.width
+            self.rightConstraint.constant = self.doorOpen ? 0 : -self.rightDoor.frame.size.width
             self.view.layoutIfNeeded()
             
         }) { (success) in
