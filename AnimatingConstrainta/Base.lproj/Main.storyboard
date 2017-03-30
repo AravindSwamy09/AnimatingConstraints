@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,20 +34,21 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Bek-QP-cK1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1F6-l3-dWb"/>
-                            <constraint firstAttribute="trailing" secondItem="NII-Hu-bct" secondAttribute="trailing" id="NZZ-MM-SWr"/>
-                            <constraint firstItem="NII-Hu-bct" firstAttribute="width" secondItem="Bek-QP-cK1" secondAttribute="width" id="PcJ-7o-rvn"/>
-                            <constraint firstItem="NII-Hu-bct" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VLI-77-cpT"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NII-Hu-bct" secondAttribute="bottom" id="Vij-RM-TQE"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bek-QP-cK1" secondAttribute="bottom" id="ajV-DI-2iD"/>
-                            <constraint firstItem="NII-Hu-bct" firstAttribute="leading" secondItem="Bek-QP-cK1" secondAttribute="trailing" constant="-1" id="eRE-ne-sJs"/>
-                            <constraint firstItem="Bek-QP-cK1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lcs-XG-ogJ"/>
+                            <constraint firstItem="Bek-QP-cK1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="3vI-2H-M9O"/>
+                            <constraint firstItem="NII-Hu-bct" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="C60-Ys-7Ja"/>
+                            <constraint firstItem="NII-Hu-bct" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="b2w-ZV-I7L"/>
+                            <constraint firstItem="Bek-QP-cK1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="ei5-WH-Jad"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bek-QP-cK1" secondAttribute="bottom" id="fZH-qJ-v84"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NII-Hu-bct" secondAttribute="bottom" id="rpV-EV-U7r"/>
                             <constraint firstItem="Bek-QP-cK1" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="y0F-fM-suT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NII-Hu-bct" secondAttribute="trailing" constant="-16" id="y59-bb-y4Z"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="leftConstraint" destination="lcs-XG-ogJ" id="13T-jm-hfd"/>
-                        <outlet property="rightConstraint" destination="NZZ-MM-SWr" id="od9-tc-kxb"/>
+                        <outlet property="leftConstraint" destination="ei5-WH-Jad" id="NSg-qi-D4u"/>
+                        <outlet property="leftDoor" destination="Bek-QP-cK1" id="gQc-HC-Ub4"/>
+                        <outlet property="rightConstraint" destination="y59-bb-y4Z" id="0vB-rS-pzA"/>
+                        <outlet property="rightDoor" destination="NII-Hu-bct" id="3jt-M0-GQ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
